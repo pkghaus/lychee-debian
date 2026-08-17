@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: pkg.haus archive <archive@pkg.haus>
 Build-Depends:
  debhelper-compat (= 13),
- libssl-dev,
+ cmake,
  pkgconf,
 Rules-Requires-Root: no
 Standards-Version: 4.6.0
@@ -13,6 +13,7 @@ Homepage: https://lychee.cli.rs
 Package: lychee
 Architecture: any
 Depends:
+ ca-certificates,
  ${misc:Depends},
  ${shlibs:Depends},
 Description: fast link checker for Markdown, HTML and websites
